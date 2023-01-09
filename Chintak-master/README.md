@@ -76,16 +76,10 @@ Mitigating the impact of air pollution on communities and workers is a key prior
 ------------------------------------------
 ### Contributors :
 
-- [@Kadam-Tushar](https://github.com/Kadam-Tushar)
-- [@jaygala25](https://github.com/jaygala25)
-- [@diggy-19](https://github.com/diggy-19)
+- [@gigDevelper10](https://github.com/Kadam-Tushar)
+- [tanushri08buruk]
 
 
 ------------------------------------------
-### License :
-
-- [MIT](https://github.com/Kadam-Tushar/Chintak/tree/master/LICENSE)
-
-- चिंतक is part of our final year project.
 
 
