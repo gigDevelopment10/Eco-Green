@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chintak</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Vue.js files -->
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vuex"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="assets/img/slide/slide-1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Welcome to <span><strong>ECO-GREEN</strong> : Air Quality Tracking And Forecasting Network </span></h2>
+                <p class="animated fadeInUp">A Step Towards A Pollution-Free World...</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="assets/img/slide/slide-2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Why India Must Start Viewing Air Pollution And Climate Change As Two Sides Of The Same Coin</h2>
+                <p class="animated fadeInUp">Developing a synergy between air pollution and climate change actions, with priority given to reducing near term human health impacts, is critical.</p>
+                <a href="https://environmentality.cprindia.org/blog/why-india-must-start-viewing-air-pollution-and-climate-change-as-two-sides-of-the-same-coin" class="btn-get-started animated fadeInUp scrollto">Know More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">India's Pollution Problem</h2>
+                <p class="animated fadeInUp">Know why all of our cities need to revamp their transportation policies...</p>
+                <a href="https://www.thinkglobalhealth.org/article/indias-pollution-problem" class="btn-get-started animated fadeInUp scrollto">Know More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-thin-double-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-thin-double-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <!-- <h1 class="text-light"><a href="index.html"><span>Chintak</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/chintak_logo_1.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li ><a href="./index.html">Home</a></li>
+         
+          <li ><a href="./delhi.html">Delhi Region</a></li>
+          <li  ><a href="./dharavi.html">Dharavi Region</a></li>
+          <li class="active" ><a href="./vidyavihar.html">Somaiya Vidyavihar</a></li>
+         
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Counts Section ======= -->
+    <section class="counts section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up" id="aqi-id">214</span>
+              <p><strong>AQI :</strong> Air Quality Index</p>
+              <a href="https://breezometer.com/air-quality-map/city/mumbai">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-document-folder"></i>
+              <span data-toggle="counter-up" id='dom-conc-id'>956</span> 
+              <p id ="dominant-pollutant-id"><strong>Dominant Pollutant: </strong>Carbon Monoxide.</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up" id='last-updated-id'>2</span>
+              <p><strong>Last Updated :</strong> Hours Ago</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">619</span>
+              <p><strong>Population in thousand:</strong> : Number of people in that area</p>
+              <a href="https://en.wikipedia.org/wiki/Dharavi">Reference &raquo;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+  
+ 
+    <!-- ======= Info Box Section ======= -->
+    <section class="info-box py-0">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+         </div>
+
+          <div style="padding-left:5%; height: 100%; width:100%;">
+              
+            <div style="float:left;display:inline-block;"><img style="float:right;" src="assets/img/AQI.png"></div>
+            <div style="float:left;display:inline-block; width:51%; height: 70%; padding-top:2%">
+              <p> <strong>&nbsp; &nbsp; &nbsp; Weather forceast-24hours (Precipitation ,Humidity, Windspeed) </strong> <p>
+            
+            <script type="text/javascript" src="https://widgets-viewer.climacell.co/v1/sdk.js"></script>
+            <div class="climacell-widget" data-apikey="wlSineIlG7KDWzVTUvn2CzcD3SCtdfBe" data-type="hourly" data-location-name="Vidyavihar, Mumbai, Maharashtra, India" data-location-lon="72.8973302" data-location-lat="19.0797638" data-size-mode="large" data-font-color="#000" data-background-color="#fff" data-font-family="verdana" data-weather-params="temp:C,precipitation:mm/hr,wind_speed:m/s,humidity:%,cloud_cover:%" data-precipitation-timeline="true" data-sunrise-sunset="true" data-allow-users-enter-address="true" ></div>
+            
+            </div>
+            
+          </div>
+          
+          <script type="text/javascript" src="https://widgets-viewer.climacell.co/v1/sdk.js"></script>
+        </div>
+
+        <div class="row">
+
+<div class="tab_container" id="app">
+  
+  <div class="tab">
+    <h2>What are you breathing ?</h2>
+    
+      <div class="menu">
+        <div  class="menu__item menu__item--first" :class="[ active === 0 ? 'is-active' : '']" @click="selectedContent(0)">CO<p id="CO_CONC" style="font-size:1rem">900 ppb</p></div>
+        <div  class="menu__item menu__item--second" :class="[ active === 1 ? 'is-active' : '']" @click="selectedContent(1)">NO2<p id="NO2_CONC" style="font-size:1rem">100 ppb</p></div>
+        <div  class="menu__item menu__item--thirst" :class="[ active === 2 ? 'is-active' : '']" @click="selectedContent(2)">O3 <p id="O3_CONC" style="font-size:1rem">100 ug/m3</p></div>
+        <div  class="menu__item menu__item--fourth" :class="[ active === 3 ? 'is-active' : '']" @click="selectedContent(3)">PM 10<p id="PM10_CONC" style="font-size:1rem">150 ug/m3</p></div>
+        <div  class="menu__item menu__item--fifth" :class="[ active === 4 ? 'is-active' : '']" @click="selectedContent(4)">PM 2.5<p id="PM25_CONC" style="font-size:1rem">35 ug/m3 </p></div>
+        <div  class="menu__item menu__item--sixth" :class="[ active === 5 ? 'is-active' : '']" @click="selectedContent(5)">SO2<p id="SO2_CONC" style="font-size:1rem">75 ppb</p></div>
+        <div class="menu__line" :class="className"></div>
+      </div>
+      
+      <div class="contents">
+        <transition :name="animation" mode="out-in">
+          <div class="contents__content" v-if="active === 0" key="0">
+            
+            <h2>Carbon Monoxide</h2>
+            <h3>Allowed conc : 900 ppb</h3>
+            <p><strong>Sources :</strong>Typically originates from incomplete combustion of carbon fuels, such as that which occurs in car engines and power plants.</p>
+            <p><strong>Effects :</strong>When inhaled, carbon monoxide can prevent the blood from carrying oxygen. Exposure may cause dizziness.</p>
+          
+          </div>
+          
+          <div class="contents__content" v-if="active === 1" key="1">
+            
+            <h2>Nitrogen Dioxide</h2>
+            <h3>Allowed conc : 45 ppb</h3>
+            <p><strong>Sources :</strong>Main sources are fuel burning processes, such as those used in industry and transportation.</p>
+            <p><strong>Effects :</strong>Exposure may cause increased bronchial reactivity in patients with asthma, lung function decline in patients with COPD, and increased risk of respiratory infections, especially in young children.</p>
+          </div>
+          
+          <div class="contents__content" v-if="active === 2" key="2">
+            
+            <h2>Ozone</h2>
+            <h3>Allowed conc : 40 ppb</h3>
+            <p><strong>Sources :</strong>Ozone is created in a chemical reaction between atmospheric oxygen, nitrogen oxides, carbon monoxide and organic compounds, in the presence of sunlight.</p>
+            <p><strong>Effects :</strong>Ozone can irritate the airways and cause coughing, a burning sensation, wheezing and shortness of breath. Additionally, ozone is one of the major components of photochemical smog.</p>
+          </div>
+          <div class="contents__content" v-if="active === 3" key="3">
+            
+              <h2>Inhalable Particulate Matter</h2>
+              <h3>Allowed conc : 150 μg/m3</h3>
+              <p><strong>Sources :</strong>Main sources are combustion processes (e.g. indoor heating, wildfires), mechanical processes .</p>
+              <p><strong>Effects :</strong>Inhalable particles can penetrate into the lungs. Short term exposure can cause irritation of the airways, coughing.</p>
+            </div>
+            <div class="contents__content" v-if="active === 4" key="4">
+            
+                <h2>Fine particulate matter</h2>
+                <h3>Allowed conc : 35 μg/m3</h3>
+                <p><strong>Sources :</strong>Main sources are combustion processes (e.g. power plants, indoor heating, car exhausts, wildfires), mechanical processes.</p>
+                <p><strong>Effects :</strong>Fine particles can penetrate into the lungs and bloodstream. Short term exposure can cause irritation of the airways, coughing .</p>
+              </div>
+              <div class="contents__content" v-if="active === 5" key="5">
+            
+                  <h2>Sulfur dioxide</h2>
+                  <h3>Allowed conc : 35 ppb</h3>
+                  <p><strong>Sources :</strong>The largest source of SO2 in the atmosphere is the burning of fossil fuels by power plants and other industrial facilities. Smaller sources of SO2 emissions include: industrial processes such as extracting metal from ore.</p>
+                  <p><strong>Effects :</strong>Sulfur dioxide affects human health when it is breathed in. It irritates the nose, throat, and airways to cause coughing, wheezing.</p>
+                </div>
+          
+        </transition>
+      </div>
+    </div>
+    
+  
+        
+  </div>
+  <div class="tab_container" id="app2">
+      <div class="tab">
+          <h2>Health Recommendations</h2>
+          
+            <div class="menu">
+              <div  class="menu__item menu__item--first" :class="[ active === 0 ? 'is-active' : '']" @click="selectedContent(0)">Youth</div>
+              <div  class="menu__item menu__item--second" :class="[ active === 1 ? 'is-active' : '']" @click="selectedContent(1)">Asthama</div>
+              <div  class="menu__item menu__item--thirst" :class="[ active === 2 ? 'is-active' : '']" @click="selectedContent(2)">Children</div>
+              <div  class="menu__item menu__item--fourth" :class="[ active === 3 ? 'is-active' : '']" @click="selectedContent(3)">Elderly</div>
+              <div  class="menu__item menu__item--fifth" :class="[ active === 4 ? 'is-active' : '']" @click="selectedContent(4)">Heart</div>
+              <div  class="menu__item menu__item--sixth" :class="[ active === 5 ? 'is-active' : '']" @click="selectedContent(5)">Pregnant</div>
+              <div class="menu__line" :class="className"></div>
+            </div>
+            
+            <div class="contents">
+              <transition :name="animation" mode="out-in">
+                <div class="contents__content" v-if="active === 0" key="0">
+                  
+                  <h2>Avoid intense activities outdoors.</h2>
+                  
+                  <p>Stay away from busy roads, construction sites, open fires and other sources of smoke.</p>
+                  
+                
+                </div>
+                
+                <div class="contents__content" v-if="active === 1" key="1">
+                 
+                    <h2>Regulary meet your familly doctor and check status of your Respiratory System.</h2>
+                    <p>Do not travel in chaotic area.</p>
+                </div>
+                
+                <div class="contents__content" v-if="active === 2" key="2">
+                    <h2>Keep healthy diet for children.</h2>
+                    <p>Their lungs are still developing, and air pollution can interfere with this biological process.Their bodies are less able to metabolize, detoxify, and excrete the toxicants contained in air pollution.</p>
+                </div>
+                <div class="contents__content" v-if="active === 3" key="3">
+                  
+                    <h2>Wear mask while travelling outdoor.</h2>
+                    <p>Stay away from raodside travel. If you develope ithing sensation or breathing problems ,visit nearby doctor as soon as possible.</p>
+                </div>
+                  <div class="contents__content" v-if="active === 4" key="4">
+                  
+                      <h2>Do not involve in heavy exerise.</h2>
+                      <p>Always keep your medications with youself and never miss prescribed medications. Keep away from vehicle ,polluted areas.</p>
+                    </div>
+                    <div class="contents__content" v-if="active === 5" key="5">
+                  
+                        <h2>Avoid public places and do not smoke, it is injurious to your baby!</h2>
+                        <p>Pregnant women and children should avoid exposure to paint fumes and limit their time in freshly painted rooms. </p>
+                        
+                      </div>
+                
+              </transition>
+            </div>
+          </div>    
+      </div>
+  
+        </div>
+
+      </div>
+    </section>
+    <!-- End Info Box Section -->
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Predictions</h2>
+          <p>We try to predict concentrations of pollutants for next  12  hours from current time using our <strong>Machine learning </strong> models which are running on <strong>cloud platforms</strong>.</p>
+          <div style="width:80%; padding-left: 20%; padding-top:4%;">
+              <canvas  id="co-lc" width="600" height="500"></canvas>
+          </div>
+
+          <div style="width:80%; padding-left: 20%;padding-top:4%;">
+              <canvas  id="no2-lc" width="600" height="500"></canvas>
+          </div>
+
+          <div style="width:80%; padding-left: 20%;padding-top:4%;">
+              <canvas  id="o3-lc" width="600" height="500"></canvas>
+          </div>
+
+          <div style="width:80%; padding-left: 20%;padding-top:4%;">
+              <canvas  id="pm10-lc" width="600" height="500"></canvas>
+          </div>
+
+          <div style="width:80%; padding-left: 20%;padding-top:4%;">
+              <canvas  id="pm25-lc" width="600" height="500"></canvas>
+          </div>
+
+          <div style="width:80%; padding-left: 20%;padding-top:4%;">
+              <canvas  id="so2-lc" width="600" height="500"></canvas>
+          </div>
+        </div>
+
+     
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+  
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+<script>
+    var xaxis = [];
+        var curr= new Date();
+        for(var i=0;i<=12;++i){
+          xaxis.push((curr.getHours()+i)%24+":"+curr.getMinutes());
+        }
+    var mapPollutantToIndex = {"co":0,"no2":1,"o3":2,"pm10":3,"pm25":4,"so2":5};
+    var mapIndexToPollutant = ["co","no2","o3","pm10","pm25","so2"];
+    
+        
+    var http = new XMLHttpRequest();
+    var http2 = new XMLHttpRequest();
+    // Delhi Lat and long
+    var lat="19.0735";
+    var long= "72.8995" ;
+    var api_key = "307644ffe5d7495bb704f4e6e51205e1";
+    var place="https://api.breezometer.com/air-quality/v2/current-conditions?lat="+lat+"&lon="+long+"&key="+api_key+"&features=local_aqi,health_recommendations,pollutants_concentrations";
+    var data,last_updated,aqi,dominant_pollutant,dom_pollutant_conc ;
+    var forecast = "https://api.breezometer.com/air-quality/v2/forecast/hourly?lat="+lat+"+&lon="+long+"&key="+api_key+"&hours=12&features=pollutants_concentrations";
+    http.open("GET",place,false);
+    http.send();
+    
+    if(http.status == 200){
+      data = JSON.parse(http.response);
+      console.log(data);
+      var update_datetime = data['data']['datetime'] ;
+      var timeBeforeinSecs = new Date(Date.parse(update_datetime)).getTime() / 1000 ;
+      last_updated = Math.ceil((Date.now()/1000 - timeBeforeinSecs)/(60*60)) ; 
+      aqi =  data['data']['indexes']['ind_cpcb']['aqi_display'];
+      dominant_pollutant = data['data']['indexes']['ind_cpcb']['dominant_pollutant'];
+      dom_pollutant_conc = data['data']['pollutants'][dominant_pollutant]['concentration']['value'];
+      dom_pollutant_conc_unit = data['data']['pollutants'][dominant_pollutant]['concentration']['units']+"";
+      dominant_pollutant = data['data']['pollutants'][dominant_pollutant]['display_name'];
+     // console.log(dom_pollutant_conc +" concent ? "+dom_pollutant_conc_unit);
+  document.getElementById("aqi-id").innerHTML = aqi;
+  document.getElementById("last-updated-id").innerHTML = last_updated;
+  document.getElementById("dominant-pollutant-id").innerHTML ="<strong>Dominant Pollutant :</strong> "+dominant_pollutant+" ("+dom_pollutant_conc_unit+" )";
+  document.getElementById("dom-conc-id").innerHTML = dom_pollutant_conc;
+  document.getElementById("CO_CONC").innerHTML = data['data']['pollutants']['co']['concentration']['value']+"&nbsp "+data['data']['pollutants']['co']['concentration']['units'];
+  document.getElementById("NO2_CONC").innerHTML = data['data']['pollutants']['no2']['concentration']['value']+" "+data['data']['pollutants']['no2']['concentration']['units'];
+  document.getElementById("O3_CONC").innerHTML = data['data']['pollutants']['o3']['concentration']['value']+" "+data['data']['pollutants']['o3']['concentration']['units'];
+  document.getElementById("PM10_CONC").innerHTML = data['data']['pollutants']['pm10']['concentration']['value']+" "+data['data']['pollutants']['pm10']['concentration']['units'];
+  document.getElementById("PM25_CONC").innerHTML = data['data']['pollutants']['pm25']['concentration']['value']+" "+data['data']['pollutants']['pm25']['concentration']['units'];
+  document.getElementById("SO2_CONC").innerHTML = data['data']['pollutants']['so2']['concentration']['value']+" "+data['data']['pollutants']['so2']['concentration']['units'];
+  }
+    else{
+      console.log("vidyavihar api call not working");
+    }
+  
+  http2.open("GET",forecast,false);
+  http2.send();
+  var breezo_predictions = [[],[],[],[],[],[]];
+  var our_predictions = [[],[],[],[],[],[]] ;
+  var linecolour = "rgb(60, 133, 90)"
+  var xyaxes = {
+                  scales: {
+                    yAxes: [{
+                      scaleLabel: {
+                        display: true,
+                        labelString: 'Parts per Billion '
+                      }
+                    }],
+                    xAxes: [{
+                      scaleLabel: {
+                        display: true,
+                        labelString: 'Time in Hours'
+                      }
+                    }]
+                  }     
+           };
+           
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }
+  
+   for(var i=0;i<13;++i)
+      for(var j=0;j<6;++j)
+        breezo_predictions[j].push(getRndInteger(100+(i+5),120));
+            
+        
+   
+  
+  if(http2.status == 200 ){
+    var forecast_data = JSON.parse(http2.response);
+    // for each pollutant 12 entries i.e 12 * 6 = entries
+    // Array of pollutants
+     breezo_predictions = [[],[],[],[],[],[]];
+     our_predictions = [[],[],[],[],[],[]] ;
+  
+    // adding current concentrations
+  
+      for(var i=0;i<6;++i){
+        breezo_predictions[i].push(data['data']['pollutants'][mapIndexToPollutant[i]]['concentration']['value']);
+      }
+  
+      
+        for(var i=0;i<12;++i){
+            for(var j=0;j<6;++j){
+              
+              breezo_predictions[j].push( forecast_data['data'][i]['pollutants'][mapIndexToPollutant[j]]['concentration']['value']);
+            }
+        }
+  
+    // Adding CO predictions for next 12 hours 
+    
+    
+  
+  }
+  else{
+    console.log("forecast not working ! ");
+  }
+  var co = new Chart(document.getElementById("co-lc"),{
+          type :'line',
+          data:{
+            labels:xaxis,
+            datasets:[{
+            label: 'Carbon Monoxide (CO) in ppb',
+              backgroundColor: linecolour,
+              fill:false,
+              borderColor: linecolour,
+              data: breezo_predictions[mapPollutantToIndex['co']]
+            }]
+          },
+          options : xyaxes
+        });
+  
+      var no2 = new Chart(document.getElementById("no2-lc"),{
+          type :'line',
+          data:{
+            labels:xaxis,
+            datasets:[{
+            label: 'Nitrogen Dioxide (NO2) in ppb',
+              backgroundColor: linecolour,
+              fill:false,
+              borderColor: linecolour,
+              data: breezo_predictions[mapPollutantToIndex['no2']]
+            }]
+          },
+          options : xyaxes
+        });
+        var o3 = new Chart(document.getElementById("o3-lc"),{
+          type :'line',
+          data:{
+            labels:xaxis,
+            datasets:[{
+            label: 'Ozone (O3) in ppb',
+              backgroundColor: linecolour,
+              fill:false,
+              borderColor: linecolour,
+              data: breezo_predictions[mapPollutantToIndex['o3']]
+            }]
+          },
+          options : xyaxes
+        });
+        var pm10 = new Chart(document.getElementById("pm10-lc"),{
+          type :'line',
+          data:{
+            labels:xaxis,
+            datasets:[{
+            label: 'Inhalable Particulate Matter in ug/m3',
+              backgroundColor: linecolour,
+              fill:false,
+              borderColor: linecolour,
+              data: breezo_predictions[mapPollutantToIndex['pm10']]
+            }]
+          },
+          options : xyaxes
+        });
+        var pm25 = new Chart(document.getElementById("pm25-lc"),{
+          type :'line',
+          data:{
+            labels:xaxis,
+            datasets:[{
+            label: 'Fine particulate matter in ug/m3',
+              backgroundColor: linecolour,
+              fill:false,
+              borderColor: linecolour,
+              data: breezo_predictions[mapPollutantToIndex['pm25']]
+            }]
+          },
+          options : xyaxes
+        });
+        var so2 = new Chart(document.getElementById("so2-lc"),{
+          type :'line',
+          data:{
+            labels:xaxis,
+            datasets:[{
+            label: 'Sulphur Dioxide in ppb',
+              backgroundColor: linecolour,
+              fill:false,
+              borderColor: linecolour,
+              data: breezo_predictions[mapPollutantToIndex['so2']]
+            }]
+          },
+          options : xyaxes
+          
+        });
+  
+  
+  </script>
+  
+  
+
+
+<script>
+    var v1 = new Vue({
+        el: '#app',
+        data: {
+            active: 0,
+            animation: 'fadeUp',
+            previous: 0,
+            className: ''
+        },
+        methods: {
+            selectedContent(index) {
+                this.active = index;
+    
+                if(index > this.previous) {
+                    this.animation = 'fadeUp';
+                }
+    
+                if(index < this.previous) {
+                    this.animation = 'fadeDown';
+                }
+    
+                this.previous = index;
+                if(index==0){
+                  this.className = 'activeFirst'
+                }
+                else
+                if(index === 1) {
+                    this.className = 'activeSecond'
+                } 
+                else if(index === 2) {
+                    this.className = 'activeThirst'
+                } else {
+                    if(index === 3){
+                      this.className ='activeFourth'
+                    }
+                  else{
+                    if(index===4){
+                      this.className ='activeFifth'
+                    }
+                    else{
+                      if(index==5){
+                        this.className ='activeSixth'
+                      }
+                    }
+                  }
+                    
+                }
+            }
+        }
+    })
+   var v2= new Vue({
+        el: '#app2',
+        data: {
+            active: 0,
+            animation: 'fadeUp',
+            previous: 0,
+            className: ''
+        },
+        methods: {
+            selectedContent(index) {
+                this.active = index;
+    
+                if(index > this.previous) {
+                    this.animation = 'fadeUp';
+                }
+    
+                if(index < this.previous) {
+                    this.animation = 'fadeDown';
+                }
+    
+                this.previous = index;
+                if(index==0){
+                  this.className = 'activeFirst'
+                }
+                else
+                if(index === 1) {
+                    this.className = 'activeSecond'
+                } 
+                else if(index === 2) {
+                    this.className = 'activeThirst'
+                } else {
+                    if(index === 3){
+                      this.className ='activeFourth'
+                    }
+                  else{
+                    if(index===4){
+                      this.className ='activeFifth'
+                    }
+                    else{
+                      if(index==5){
+                        this.className ='activeSixth'
+                      }
+                    }
+                  }
+                    
+                }
+            }
+        }
+    })
+    </script>
+
+</html>

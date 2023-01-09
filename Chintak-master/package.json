@@ -1,0 +1,31 @@
+{
+  "name": "chintak",
+  "version": "1.0.0",
+  "description": "chintak is air quality monitor system",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kadam-Tushar/Chintak.git"
+  },
+  "keywords": [
+    "Air",
+    "Quality",
+    "graph-visualization"
+  ],
+  "author": "Tushar Kadam,Jay Gala, Dhruvi Vadalia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kadam-Tushar/Chintak/issues"
+  },
+  "homepage": "https://github.com/Kadam-Tushar/Chintak#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@testing-library/dom": "^7.24.2",
+    "jest": "^26.4.2",
+    "jest-dom": "^4.0.0"
+  }
+}
